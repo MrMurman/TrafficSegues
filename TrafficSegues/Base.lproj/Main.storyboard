@@ -21,7 +21,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Push to Yellow"/>
                                 <connections>
-                                    <action selector="yellowButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U01-ky-9q3"/>
+                                    <segue destination="xBY-4F-lQT" kind="show" id="BMN-6C-bMi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Fv-xb-qcE">
@@ -43,7 +43,6 @@
                     <navigationItem key="navigationItem" title="Red" id="YU6-dE-WwC"/>
                     <connections>
                         <outlet property="segueSwitch" destination="c3o-a8-4FO" id="U5w-JD-dUL"/>
-                        <segue destination="xBY-4F-lQT" kind="show" identifier="Yellow" id="VEH-Ec-MWg"/>
                         <segue destination="K6f-EY-Bqu" kind="show" identifier="Green" id="5f3-Rd-1Ey"/>
                     </connections>
                 </viewController>

@@ -22,15 +22,9 @@ class ViewController: UIViewController {
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         
         print("ShouldPerformSegue called")
-        if segueSwitch.isOn && (identifier == "Yellow" || identifier == "Green") {return true} else {return false}
+        if segueSwitch.isOn {return true} else {return false}
     }
     
-    @IBAction func yellowButtonTapped(_ sender: UIButton) {
-    //    if segueSwitch.isOn {
-        shouldPerformSegue(withIdentifier: "Yellow", sender: nil)
-            performSegue(withIdentifier: "Yellow", sender: nil)
-       // }
-    }
     
 
     @IBAction func greenButtonTapped(_ sender: UIButton) {
